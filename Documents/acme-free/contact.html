@@ -63,6 +63,7 @@
                   <li class="active">
                         <a href="https://bit.ly/30rVEGv" target="_blank">Download Now</a>
                     </li>
+                    <li><input class="form-control search" placeholder=" Search" type="text"></li>
               </ul>
           </div>
       </div>
@@ -73,32 +74,14 @@
     <div class="breadcrumbs">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-sm-4">
+          <div class="col-lg-12 col-sm-12">
             <p class="address">
                 <b>Always First. Always Smart.</b><br>
-                Looking for answers? <br>
+                Looking for answers? 
             We’re here to help…because sometimes, <br>we all just need a push in the right direction!
-            </p><p style="color: white; font-size:20px; display: inline;"></span>
-                <i>Insure you compare!</i></h1>
-                </div>
+            </p>
           </div>
-          <div class="col-lg-8 col-sm-8">
-            <ol class="breadcrumb pull-right">
-              <li>
-                <a href="index.html">
-                  Home
-                </a>
-              </li>
-              
-                <!-- <a href="#">
-                  Pages
-                </a> -->
-              
-              <li class="active">
-                Contacts
-              </li>
-            </ol>
-          </div>
+         <!--  -->
         </div>
       </div>
     </div>
@@ -150,7 +133,7 @@
             <p>
               <i class="icon-phone">
               </i>
-              +0800 720 137 (call for free)
+              0800 720 137 (call for free)
             </p>
             <i class="icon-phone">
               </i>
@@ -168,30 +151,30 @@
               <b></b>
           </p>
           <div class="contact-form">
-            <form role="form">
+            <form role="form" action="hillcroftinsurance.com:8445/savecontact">
               <div class="form-group">
                 <label for="name">
                   Name
                 </label>
-                <input type="text" placeholder="" id="name" class="form-control">
+                <input type="text" placeholder="" id="name"  name="name"class="form-control">
               </div>
               <div class="form-group">
                 <label for="email">
                   Email
                 </label>
-                <input type="text" placeholder="" id="email" class="form-control">
+                <input type="text" placeholder="" id="email" name="email" class="form-control">
               </div>
               <div class="form-group">
                 <label for="phone">
                   Phone
                 </label>
-                <input type="text" id="phone" class="form-control">
+                <input type="text" id="phone" name="phone"class="form-control">
               </div>
               <div class="form-group">
                 <label for="phone">
                   Message
                 </label>
-                <textarea placeholder="" rows="5" class="form-control">
+                <textarea placeholder="" rows="5" name="message" class="form-control">
                 </textarea>
               </div>
               <button class="btn btn-info" type="submit">
@@ -440,9 +423,125 @@
         </div>
 
       </div>
-    </footer> -->
+    </footer> 
     <!-- footer end -->
     <!--small footer start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+            <h1>
+              contact info
+            </h1>
+            <address>
+              <p><i class="fa fa-home pr-10"></i>mTek Services<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Westwood, 3rd FloorOff Ring<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road, Westlands</p>
+              <p><i class="fa fa-globe pr-10"></i>&nbsp;Nairobi, Kenya </p>
+              <!-- <p><i class="fa fa-mobile pr-10"></i>&nbsp;&nbsp;0800 720 137 (call for free) </p> -->
+              <p><i class="fa fa-phone pr-10"></i>&nbsp;0800 720 137 (call for free)</p>
+              <p><i class="fa fa-envelope pr-10"></i>&nbsp;<a href="besmarter@mtek-services.com">besmarter@mtek-services.com</a></p>
+
+          </div>
+          <!-- <div class="col-lg-3 col-sm-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+            <h1>latest tweet</h1>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">@example</a>
+                  for all future updates of us!
+                  <a href="javascript:;">twitter.com/acme</a>
+                </em>
+              </div>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">@example</a>
+                  for all future updates of us!
+                  <a href="javascript:;">twitter.com/acme</a>
+                </em>
+              </div>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">@example</a>
+                  for all future updates of us!
+                  <a href="javascript:;">twitter.com/acme</a>
+                </em>
+              </div>
+          </div> -->
+          <div class="col-lg-3 col-sm-3">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+               <h1>mTek Services<br>
+                <p class="footer" style="font-size: 20px;color: white; text-align: left;">Insure you are smarter!
+    Your<br> end-to-end insurance<br> solution</p>
+              </h1>
+             <!--  <p style="font-size: 12px; color: white;">
+                Insure you are smarter!<br>
+    Your end-to-end insurance solution</p>
+      - truly paperless! -->
+              <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-3 col-sm-3">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                 <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="#">We are mTek</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Solution</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Touch Base With Us</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Download Now</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </p></div></div></div></div>
     <footer class="footer-small">
         <div class="container">
             <div class="row">

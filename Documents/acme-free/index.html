@@ -28,22 +28,24 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
+    <!-- <HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries> -->
+    <!-- [if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
     <style>
       .android-btn{
 
 width: 240px;
-padding: 13px 17px 13px 0px;
-background-color: #000;
+padding: 5px 9px 5px 0px;
+background-color: #32c1da;
 border-color: #000;
+margin-top: 3%;
+margin-left: 6px;
 
 }
 .android-btn:hover{
-background-color: #272727;
+background-color:#167f9f !important ;
 }
 
 .android-btn i{
@@ -85,6 +87,24 @@ line-height: 24px;
               p.insure{
                 text-align: center;
               }
+              .video-container {
+    position: relative;
+    padding-bottom: ;
+    padding-top: 30px;
+    height: 500px !important;
+    width: 100%;
+    overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #167f9f;
+  opacity: 0.5;
+  z-index: 1;
+}
               </style>
   </head>
 
@@ -123,9 +143,13 @@ window.location.reload();
                   <li>
                       <a href="contact.html">Contact Us</a>
                   </li>
+
                   <li class="active">
                         <a href="https://bit.ly/30rVEGv" target="_blank">Download Now</a>
-                    </li> 
+                    </li>  
+                    <!-- <a class="btn btn-lg btn-success big-btn android-btn" href="https://bit.ly/30rVEGv" target="_blank">
+          <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a> -->
+          
                       
               </ul>
           </div>
@@ -250,28 +274,61 @@ window.location.reload();
 <!-- </header> -->
     <!-- -->
     <!--property end-->
-    
-    
-      <div class="row">
-        <div class="col-lg-12 col-sm-12 col-md-12">
-      <div class="header">
-    <div class="videoBackgroundWrapper">
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <!-- <source src="http://www.example/home.webm" type="video/webm"> -->
-         <source src="videos/media.io_mtekwebsiteherovideo_1 (1).webm" type="video/webm"> 
+    <div class="row">
+    <div class="col-lg-12 col-sm-12">
+
+                <div class="video-container">
+                 
+<object class="embed-responsive-item">
+  <div class="overlay"></div>
+     <video autoplay loop >
+       <source src="videos/mtek website video cut 1.mp4" />
+     </video>
+   </object></div></div></div>
+
+<!-- 4:3 aspect ratio --> 
+<!-- 
+<div class="embed-responsive embed-responsive-4by3">
+
+    <video width="320" height="240" controls>
+
+        <source src="movie.mp4" type="video/mp4">
+
     </video>
+
+</div> -->
+                </div>
+      <!-- <div class="row"> -->
+        <!-- <div class="col-lg-12 col-sm-12 col-md-12">
+      <div class="header"> -->
+    <!-- <div class="videoBackgroundWrapper"> -->
+      <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> -->
+        <!-- <source src="http://www.example/home.webm" type="video/webm"> -->
+         <!-- <source src="videos/mtek website hero video_1 (online-video-cutter.com).mp4" type="video/webm"> -->
                     <!--  <video preload="auto" autoplay="true" loop="true" class="videoBackground">
                  <source src="videos/mtek_website_hero_video_1.mp4" type="video/mp4">
               </video> -->
-                        <div class="overlay">
+                       <!--  <div class="overlay">
              <h2 style="font-size: 30px; border:2px solid #fff; border-radius: 30px; padding-bottom: 2px;padding-top: 10px;padding-left: 10px;padding-right: 10px;">Insure you compare!
              <p class="insure" style="font-size: 24px;">Your end-to-end insurance solution-truly paperless!</p></h2>
-             <div class="videoButtonWrapper">
-             <!-- <button class="btn btn-primary">See Templates</button>
-             <button class="btn btn-primary"><a style="font-size: 30px; color: white; padding-top:2%;padding-bottom: 2%;padding-right: 2%;padding-left: 2%;" href="https://bit.ly/30rVEGv" target="_blank">Download App</a></button>
-             </div>-->
-             <a class="btn btn-lg btn-success big-btn android-btn" href="#">
-          <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>     </div>
+             <div class="videoButtonWrapper"> -->
+             <!-- <button class="btn btn-primary">See Templates</button> -->
+            <!--  <button class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-theVideo=https://www.youtube.com/embed/OrPg1MfFWWo ><a style="font-size: 30px; color: white; padding-top:2%;padding-bottom: 2%;padding-right: 2%;padding-left: 2%;" href="#">Watch Video</a></button>
+             <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true"> -->
+
+
+        <!-- <div class="modal-content"> -->
+           <!--  <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="560" height="315" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+             <!-- <a class="btn btn-lg btn-success big-btn android-btn" href="https://bit.ly/30rVEGv" target="_blank">
+          <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>     </div> -->
 </div>
 </div>
 </div>
@@ -280,6 +337,129 @@ window.location.reload();
     <!--footer start-->
     <!-- footer end -->
     <!--small footer start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+            <h1>
+              Contact info
+            </h1>
+            <address>
+              <p><i class="fa fa-home pr-10"></i>mTek Services<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Westwood, 3rd FloorOff Ring<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road, Westlands</p>
+              <p><i class="fa fa-globe pr-10"></i>&nbsp;Nairobi, Kenya </p>
+              <!-- <p><i class="fa fa-mobile pr-10"></i>&nbsp;&nbsp;0800 720 137 (call for free) </p> -->
+              <p><i class="fa fa-phone pr-10"></i>&nbsp;0800 720 137 (call for free)</p>
+              <p><i class="fa fa-envelope pr-10"></i>&nbsp;<a href="besmarter@mtek-services.com">besmarter@mtek-services.com</a></p>
+
+            </address>
+          </div>
+          <!-- <div class="col-lg-3 col-sm-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+            <h1>latest tweet</h1>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">@example</a>
+                  for all future updates of us!
+                  <a href="javascript:;">twitter.com/acme</a>
+                </em>
+              </div>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">@example</a>
+                  for all future updates of us!
+                  <a href="javascript:;">twitter.com/acme</a>
+                </em>
+              </div>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">@example</a>
+                  for all future updates of us!
+                  <a href="javascript:;">twitter.com/acme</a>
+                </em>
+              </div>
+          </div> -->
+          <div class="col-lg-3 col-sm-3">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+               <h1>mTek Services<br>
+                <p class="footer" style="font-size: 20px;color: white; text-align: left;">Insure you are smarter!
+    Your<br> end-to-end insurance<br> solution</p>
+              </h1>
+             <!--  <p style="font-size: 12px; color: white;">
+                Insure you are smarter!<br>
+    Your end-to-end insurance solution</p>
+      - truly paperless! -->
+              <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-3 col-sm-3">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                 <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="#">We are mTek</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Solution</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Touch Base With Us</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Download Now</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="help.html">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
+              <h1>
+                
+              </h1>
+              <!-- <p style="font-size: 12px">
+                Insure you are smarter!</h1><br>
+    Your end-to-end insurance solution
+      - truly paperless!</h2></br>
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <footer class="footer-small">
         <div class="container">
             <div class="row">
@@ -304,8 +484,7 @@ window.location.reload();
     <!-- js placed at the end of the document so the pages load faster-->
 <!--<script src="js/jquery.js">-->
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-1.8.3.min.js">
+<script src="js/jquery-1.8.3.min.js">
     </script>
     <script src="js/bootstrap.min.js">
     </script>
@@ -331,7 +510,6 @@ window.location.reload();
     </script>
     <script type="text/javascript" src="js/parallax-slider/jquery.cslider.js">
     </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script type="text/javascript">
       $(function() {
 
@@ -342,7 +520,23 @@ window.location.reload();
 
       });
     </script>
+<script>
+  autoPlayYouTubeModal();
 
+  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+  function autoPlayYouTubeModal() {
+      var trigger = $("body").find('[data-toggle="modal"]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-theVideo"),
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+  }
+</script>
 
 
     <!--common script for all pages-->

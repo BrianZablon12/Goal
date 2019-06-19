@@ -41,9 +41,12 @@ a { color: #444e67 }
 a:hover { color: #32c1dA }
 p { line-height: 22px }
 /*header*/
-.head-section { border-bottom: 1px solid #eee }
+.head-section { border-bottom: 1px solid #eee;
+margin-bottom:6px; 
+margin-top: ;}
 .head-section .navbar {
-    margin-bottom: 0;
+    margin-bottom: 0.1px;
+    margin-top: -1.7%;
 }
 .navbar-default { border: none }
 .navbar-brand {
@@ -59,6 +62,7 @@ p { line-height: 22px }
     float: right;
     margin-right: 0;
     z-index: 199;
+    margin-top: 20px;
 }
 .head-section .navbar-default { background-color: #fff }
 .head-section .nav li a,
@@ -795,8 +799,9 @@ ul.about-flex-slides { margin-left: 0 }
 .breadcrumbs {
     background: #167f9f;
     color: #fff;
-    padding: 30px 0;
-    margin-bottom: 40px;
+    margin-top:px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .breadcrumb {
     margin-bottom: 0;
@@ -808,7 +813,8 @@ ul.about-flex-slides { margin-left: 0 }
     font-size: 24px;
     font-weight: 600;
     margin: 3px 0 0;
-    text-transform: uppercase;
+    text-transform:none ;
+    text-align: center;
 }
 /*contact*/
 .contact-map {
@@ -1078,13 +1084,7 @@ section.contact-infos {
     margin-right: 4px;
 }
 .blog-content { padding: 20px }
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
+
 .single-video { padding-bottom: 43% !important }
 .video-container iframe,
 .video-container object,
@@ -1210,21 +1210,22 @@ ul.tag li a {
 }
 /*footer*/
 .footer {
-    background: #34495e;
+    background: #32c1dA;
     color: #fff;
-    padding: 50px 0;
+    padding:  0;
     display: inline-block;
     width: 100%;
     font-weight: 300;
+    margin-top: 6px;
 }
 .footer h1 {
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 12px;
     margin-bottom: 20px;
 }
-.footer address a { color: #32c1dA }
+.footer address a { color: white; }
 .tweet-box {
     background: #505b71;
     padding: 8px 15px;
@@ -1301,15 +1302,17 @@ ul.page-footer-list {
 }
 ul.page-footer-list li {
     line-height: 35px;
-    border-bottom: 1px dashed #636F79;
+    border-bottom: 1px dashed #167f9f;
 }
 ul.page-footer-list a { color: #fff }
 ul.page-footer-list li i { padding-right: 10px }
 .footer-small {
     border-top: 1px solid #32c1dA ;
     background-color:;
-    margin-top: -6px;
+    margin-top: 6px;
     padding-top: 5px;
+    
+
 }
 .text-footer {
     padding-left: 10px;
@@ -2428,7 +2431,9 @@ p { text-align: center }
 .candidate h1 { margin-bottom: 20px }
 .align-left { text-align: left }
 .privacy-terms h3,
-p { text-align: left; }
+p { text-align: left; 
+margin-top: 1%;
+margin-bottom: -0.5%;}
 .terms-list {
     padding-left: 15px;
     padding-bottom: 25px;
@@ -2564,7 +2569,7 @@ p { text-align: left; }
     transition: all .3s ease;
 }
 .btn.btn-success {
-    background-color: #8cc152;
+    background-color: #32c1da;
     border: none;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -2595,7 +2600,7 @@ p { text-align: left; }
 .btn.btn-info:hover,
 .btn.btn-info:active,
 .btn.btn-info.hover {
-    background-color: #48cfad;
+    background-color: #167f9f;
     border: none;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
