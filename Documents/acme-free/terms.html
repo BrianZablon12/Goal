@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Developed By M Abdur Rokib Promy">
-    <meta name="author" content="cosmic">
+    <meta name="author" content="rokib">
     <meta name="keywords" content="Bootstrap 3, Template, Theme, Responsive, Corporate, Business">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Acme | Home</title>
+    <title>mTek | Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,420 +20,498 @@
     <link href="assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/mixitup.css">
 
-
-      <!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/component.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- <HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries> -->
+    <!-- [if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
+    <style>
+      .android-btn{
+
+width: 240px;
+padding: 5px 9px 5px 0px;
+background-color: #32c1da;
+border-color: #000;
+margin-top: 3%;
+margin-left: 6px;
+
+}
+.android-btn:hover{
+background-color:#167f9f !important ;
+}
+
+.android-btn i{
+font-size: 55px;
+}
+
+.android-btn .btn-text{
+margin-top: 0px;
+}
+
+.android-btn strong{
+font-size: 25px;
+text-shadow: none;
+color: #fff;
+line-height: 24px;
+}
+
+      .overlay{position: absolute;
+            display: flex;
+            top: -60%;
+            bottom: 0;
+            left: -50%;
+            right: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+           }
+            .overlay .videoButtonWrapper{
+                flex-direction: row;
+                margin-bottom: 10px;
+            }
+            .videoBackgroundWrapper{position: relative; width: 1005;overflow: hidden;}
+            .videoBackground{width: 100%;}
+              .tooltip:hover .tooltiptext {
+                  visibility: visible;
+              }
+              p.insure{
+                text-align: center;
+              }
+              .video-container {
+    position: relative;
+    padding-bottom: ;
+    padding-top: 30px;
+    height: 600px !important;
+    width: 100%;
+    overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+              </style>
   </head>
 
-  <body>
+  <body onLoad=" LoadOnce()">
+    <script language=" JavaScript" >
+<!-- 
+function LoadOnce() 
+{ 
+window.location.reload(); 
+} 
+//-->
+</script>
     <!--header start-->
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">A
-              <span>cme</span></a>
+              <span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">
+              <span><a class="navbar-brand" href="index.html"><span><img class="logo" src="logo/MTEK-LOGO-1.gif" width="150" >
+              </span></a></span></a>
+
           </div>
 
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="index.html">Home <i class="fa fa-angle-down"></i>
-                      </a>
-
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="index.html">Home Parallax</a>
-                          </li>
-
-                          <li>
-                              <a href="index1.html">Home Seq-slider1</a>
-                          </li>
-
-                          <li>
-                              <a href="index2.html">Home Seq-slider2</a>
-                          </li>
-
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">Feature <i class="fa fa-angle-down"></i>
-                      </a>
-
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="typography.html">Typography</a>
-                          </li>
-
-                          <li>
-                              <a href="button.html">Buttons</a>
-                          </li>
-
-                          <li>
-                              <a href="form.html">Form</a>
-                          </li>
-
-                          <li>
-                              <a href="table.html">Table</a>
-                          </li>
-
-                          <li class="dropdown-submenu">
-                              <a href="#" tabindex="-1">More options</a>
-
-                              <ul class="dropdown-menu">
-                                  <li>
-                                      <a href="#" tabindex="-1">Second level</a>
-                                  </li>
-
-                                  <li class="dropdown-submenu">
-                                      <a href="#">Even More..</a>
-
-                                      <ul class="dropdown-menu">
-                                          <li>
-                                              <a href="#">3rd level</a>
-                                          </li>
-
-                                          <li>
-                                              <a href="#">3rd level</a>
-                                          </li>
-                                      </ul>
-                                  </li>
-
-                                  <li>
-                                      <a href="#">Second level</a>
-                                  </li>
-
-                                  <li>
-                                      <a href="#">Second level</a>
-                                  </li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">Pages <i class="fa fa-angle-down"></i>
-                      </a>
-
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="about.html">About</a>
-                          </li>
-
-                          <li>
-                              <a href="404.html">404 page</a>
-                          </li>
-
-                          <li>
-                              <a href="career.html">career</a>
-                          </li>
-
-                          <li>
-                              <a href="login.html">Login</a>
-                          </li>
-
-                          <li>
-                              <a href="registration.html">Registration</a>
-                          </li>
-
-                          <li>
-                              <a href="faq.html">FAQ</a>
-                          </li>
-
-                          <li class="dropdown-submenu">
-                              <a href="#" tabindex="-1">Pricing table</a>
-
-                              <ul class="dropdown-menu">
-                                  <li class="dropdown-submenu"></li>
-
-                                  <li>
-                                      <a href="price-table-one.html">Pricing table one</a>
-                                  </li>
-
-                                  <li>
-                                      <a href="price-table-two.html">Pricing table two</a>
-                                  </li>
-                              </ul>
-                          </li>
-
-                          <li>
-                              <a href="service.html">Service</a>
-                          </li>
-
-                          <li>
-                              <a href="terms.html">Terms & Condition</a>
-                          </li>
-
-                          <li>
-                              <a href="privacy.html">Privacy policy</a>
-                          </li>
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">Portfolio <i class="fa fa-angle-down"></i>
-                      </a>
-
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="portfolio-3-col.html">Portfolio 3 column</a>
-                          </li>
-
-                          <li>
-                              <a href="portfolio-4-col.html">Portfolio 4 column</a>
-                          </li>
-
-                          <li>
-                              <a href="portfolio-single-image.html">Portfolio Single Image</a>
-                          </li>
-
-                          <li>
-                              <a href="portfolio-single-video.html">Portfolio Single Video</a>
-                          </li>
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">Blog <i class="fa fa-angle-down"></i>
-                      </a>
-
-                      <ul class="dropdown-menu">
-                          <li>
-                              <a href="blog.html">Blog</a>
-                          </li>
-
-                          <li>
-                              <a href="blog-two-col.html">Blog two column</a>
-                          </li>
-
-                          <li>
-                              <a href="blog-detail.html">Blog Single Image</a>
-                          </li>
-
-                          <li>
-                              <a href="blog-detail-video.html">Blog single video</a>
-                          </li>
-                      </ul>
-                  </li>
-
                   <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="#">Solution</a>
+                  </li>
+                  <li>
+                      <a href="help.html">Help</a>
+                  </li>
+                  <li>
+                      <a href="contact.html">Contact Us</a>
                   </li>
 
-                  <li><input class="form-control search" placeholder=" Search" type="text"></li>
+                  <li class="active">
+                        <a href="https://bit.ly/30rVEGv" target="_blank">Download Now</a>
+                    </li>  
+                    <li><input class="form-control search" placeholder=" Search" type="text"></li>
+                    <!-- <a class="btn btn-lg btn-success big-btn android-btn" href="https://bit.ly/30rVEGv" target="_blank">
+          <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a> -->
+          
+                      
               </ul>
           </div>
       </div>
     </header>
-    <!--header end-->
-
-    <!--breadcrumbs start-->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                    <h1>Terms & Conditions</h1>
-                </div>
-                <div class="col-lg-8 col-sm-8">
-                    <ol class="breadcrumb pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li class="active">Terms</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--breadcrumbs end-->
-
-
-
-        <!-- privacy -->
-    <div class="container privacy-terms">
+<div class="container privacy-terms">
         <div class="row">
             <div class="col-md-12">
-                <h3>Ownership</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <h3>CUSTOMER TERMS AND CONDITIONS</h3>
+                <p> This agreement contains the complete terms and conditions related to your use of mTek  Application provided to you by Underwriting Africa of P.O Box 57671-00100 Nairobi- (“HT”) and its affiliates and supersedes all other agreements entered into between you and HT. The Application includes all software, computer code, data and components of mTek App provided by mTek Technologies.  These terms and conditions take effect on the date of publication. By participating in or continuing to use the HT App you shall be deemed to be making an affirmative statement of your acceptance of these terms and conditions.
                 </p>
                 <p> &nbsp; </p>
-                <h3>Anti fraud</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <h3>DEFINITIONS</h3>
+                <p> For purposes of this Agreement,
+“Account/ means your HT account being the record maintained by us on the Application “Affiliates/ means any corporation or other entity that HT directly or indirectly through one or more   intermediaries’ controls or is controlled by or is under common control with a party.
+“Currency/ means any lawful form of money that is used in territories/countries where the Application is used.
+“Data Charges/ means data costs incurred by you and deducted by your mobile service provider.
+“End User/ means any person using HT services on the application
+“HT App/, “HT Application/, “mTek  App/, “App/ means the application operated by HT providing insurance services.
+“HT products and services/ means any products and services provided to you by HT whether under this agreement or otherwise.
+“Registration Form/ means the registration form containing registration details and your acceptance of these terms and conditions.
+“You/ or “your/ means the HT customer operating an account and who has registered on the Application
+
                 </p>
                 <p> &nbsp; </p>
-                <h3>Refund Policy</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <h3>LICENSE.</h3>
+                <p> Provided You comply with this Agreement, HT grants You a revocable, limited, non-transferrable, non-exclusive license to use the Application on any Phone or Tablet (Android or iPhone) that You own or control and as permitted by Usage Rules set forth in different Play Store Terms and Conditions as per the phone you are using.
                 </p>
                 <p> &nbsp; </p>
-                <h3>Warranty and support</h3>
+                <h3>AGE REQUIREMENT.</h3>
                 <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                This Application is available to users of all ages. However, if You are under the age of 18, You should review this Agreement with Your parent or guardian to make sure that You or Your parent or guardian understand the terms and conditions contained in this Agreement.
                 </p>
                 <p> &nbsp; </p>
-                <h3>Others</h3>
+                <h3>DISCLAIMER OF WARRANTY.</h3>
                 <p>
-                Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                This Application is licensed /as-is,/ /with all faults,/ and /as available./ You bear the risk of using the Application. HT, on behalf of itself, distributors of the Application, its licensors, network operators over whose network the Application is distributed, and each of their respective affiliates and suppliers, gives no express or implied warranties, guarantees, or conditions under or in relation to the Application, including, but not limited to, warranties of merchantability and fitness for a particular purpose. HT does not warrant that the functionality or operation of the Application will be uninterrupted or free from error, that any defects in the Application will be corrected, or that the Application or the server(s) that makes it available are free of viruses or other harmful conditions or components.
                 </p>
-                <ul class="list-unstyled terms-list">
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>Ut adipiscing elit magna sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet. Et harum quidem rerum facilis fusce condimentum eleifend enim a feugiat.</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</li>
+                <p> &nbsp; </p>
+                <h3>INFORMATION; DATA USAGE; CLAIMS .</h3>
+                <p>
+                All information submitted by You or collected through this Application is the property of HT. This includes, but is not limited to, pictures and messages, information about Your device (for example, the device identifier, the advertising identifier, and the make and model) and its state, device application permissions, and vehicle and estimate information. HT may associate such information with your personal information that we collect or otherwise obtain in order to optimize Our online and mobile advertising programs. HT may also collect and store, or direct a third party to collect and store, information about the physical location of Your device by using, for example, wireless network, cell phone tower, and satellite signals. Such location information is approximate (based on factors such as obstructions, beacon orientation, and environmental surroundings) and may be combined with other information submitted by You or collected through the Application. This information may be used by HT and third parties to identify Your geographical location, to improve the Application, and to provide You with location-based content, including advertising for products and services. HT may use information You submit as part of any claim investigation or for any other insurance related or otherwise permissible purpose. Submission of information via this Application does not mean Your claim will be paid. Payment of Your claim is subject to all policy terms and conditions in addition to any applicable laws and regulations of Kenya.
+                </p>
+                <p> &nbsp; </p>
+                <h3>mTek INSURNACE PRODUCTS.</h3>
+                <p>
+                HT may change the programs or products mentioned in this Application at any time without notice. Additionally, all insurance products referred to in this Application are subject to availability and qualifications. Product terms, conditions, and exclusions not described in this Application may apply.
+                </p>
+                <p> &nbsp; </p>
+                <h3>INTELLECTUAL PROPERTY RIGHTS: OWNERSHIP; PROPRIETARY RIGHTS; RESTRICTIONS.</h3>
+                <p>
+                All intellectual property in this application is owned BY HT. The Application, including all text, graphics, user and visual interfaces, trademarks, logos, computer code, software, data, components, documentation and other content (collectively, the /Content/), is exclusively the property of HT and its licensors and is protected by copyright, trademark and other intellectual property laws. Therefore any unauthorized reproduction, modification, distribution or republication of HT materials or intellectual property without the express prior written consent of HT and/or its affiliates is strictly prohibited. Except as expressly provided in this Agreement, no part of the Application or Content, in whole or in part, may be copied, reproduced, duplicated, sold, republished, reposted or otherwise distributed for public or commercial use.  You agree not to modify, port, translate or create derivative works of, or from, the Application.  You further agree not to decompile, disassemble, reverse engineer or otherwise attempt to derive, reconstruct, identify or discover any source code, underlying ideas, or algorithms from the Application.  The use of third-party trademarks therein is intended to denote interoperability and does not constitute: (i) an affiliation by HT and its licensors with such company, or (ii) an endorsement or approval of such company of mTek and its licensors and its products and services.
+                </p>
+                <p> &nbsp; </p>
+                <h3>. LINKS TO OTHER WEB SITES.</h3>
+                <p>
+                This Application may contain links to other web sites. HT provides links to other sites as a convenience to persons who use the Application. mTek is not responsible for examining or evaluating the content or accuracy of any such third-party material or web site. HT does not warrant or endorse and does not assume and will not have any liability or responsibility for any third-party materials or web sites, or for any other materials, products, or services of third parties. If You choose to use the services provided by those sites, You may be asked by those sites to provide certain personally identifiable information (some of which may, on an individual or aggregated basis, be shared with HT).
+Please be aware that HT is not responsible for the privacy practices of those sites, even though HTs name or logo may appear on those sites. We encourage You to be aware when You leave Our Application. You should read the privacy policies of each web site that You visit, as the privacy policies of those sites may differ from Ours.
+
+                </p>
+                <p> &nbsp; </p>
+                <h3>LIMITATION OF LIABILITY.</h3>
+                <p>
+                To the extent permitted by law, HT and its licensors disclaim liability, whether based in contract, tort, negligence, strict liability or otherwise, for damages of any kind (including, but not limited to, direct, indirect, incidental, consequential, special, punitive and exemplary damages) in any way arising out of or in connection with the Application, service interruptions, delays in operation or transmission, or third-party access to personal information input in or collected through the Application, even if HT and its licensors have express knowledge of the possibility of such damages. HT and its licensors have no responsibility, and will in no way be held liable, for the security of the End User’s mobile device. You agree not to seek to recover any damages, including consequential, lost profits, special, indirect or incidental damages from mTek, its licensors, or any distributor of the Application.
+                </p>
+                <p> &nbsp; </p>
+                <h3>SUPPORT SERVICES.</h3>
+                <p>
+                The Application is provided /as is./ Neither HT, its suppliers, distributors of the Application, Your device manufacturer, nor Your network operator are responsible for providing maintenance or support services for the Application.
+                </p>
+                <h3>DISPUTE RESOLUTION AND GOVERNING LAW.</h3>
+                <p>
+                I. This Application is controlled, operated and intended for use only in the Republic of Kenya. We do not represent that materials in this Application are appropriate or made available for use outside of the Republic of Kenya. This Agreement shall be governed by and interpreted according to the law of the Republic of Kenya.
+II. You may contact HT customer care ( +254 701 295 447) or email (info@themTekgroup.com ) any disputes, claims or to report account discrepancies. HT customer care shall handle the report in accordance with HT’s standard complaint handling procedures III. Any dispute arising out of  or in connection with this agreement that is not resolved by the operations manager shall be referred to arbitration by a single arbitrator appointed jointly by both parties or in default of such agreement within 90 days of the notification of a dispute, upon the application of either party, by the Chairman for the time being of the  Chartered Institute of Arbitration (Kenya Chapter).Such Arbitration shall be conducted in English in Nairobi in accordance with the rules of Arbitration of the said Institute and subject to and in accordance with provisions of the Arbitration Act 1995 as modified and revised or any succeeding statute.
+IV. To the extent permissible by Law, the determination of the Arbitrator shall be final, conclusive and binding upon the parties hereto.
+V. Nothing in this section shall be deemed to exclude any legally recognized dispute resolution body from receiving, hearing and determining the dispute.
+
+                </p>
+                <h3>SEVERABILITY.</h3>
+                <p>
+                If any provision of this Agreement is held invalid, void or unenforceable, then that provision is considered severable from the remaining provisions, and the remaining provisions shall remain in full force and effect. HT’s failure to enforce any right or provision in this Agreement will not constitute a waiver of such provision, or any other provision in this Agreement.
+                </p>
+                <h3>FORCE MAJURE</h3>
+                <p>
+                Neither party shall be reliable to the other party for any delay or failure to perform its obligations under these terms and conditions as a result of revolution or civil disorders, belligerent aggression by enemy strikes; lack of available resources from persons other than  parties to this agreement; labour disputes, electrical equipment or application availability delay or failure; fires; floods; acts of God; government or regulatory intervention; or without limiting the foregoing; any other causes not within its control, and which by the exercise of reasonable diligence it is  unable to prevent, whether of the class of causes hereinbefore  enumerated or not. If such delay or failure continues for at least 90 days, then either party may terminate their engagement by notice in writing to the other.
+                </p>
+                <h3>GENERAL</h3>
+                <p>
+                  <ul class="list-unstyled terms-list">
+                    <li><i class="fa fa-arrow-circle-right pr-10"></i>You acknowledge that these terms and conditions are subject to amendment, modification or variation from time to time if required by, or found to be in conflict with applicable law or regulation or otherwise without affecting the validity or enforceability of the remaining provisions</li>
+                    <li><i class="fa fa-arrow-circle-right pr-10"></i>These terms and conditions constitute the entire agreement between the parties with respect to the subject matter hereof.</li>
                     <li><i class="fa fa-arrow-circle-right pr-10"></i>Praesentium voluptatum deleniti atque corrupti quos</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui  pr-10blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>Mentum eleifend enim a feugiat distinctio lor</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>Ut adipiscing elit magna sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet. Et harum quidem rerum facilis fusce condimentum eleifend enim a feugiat.</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>Praesentium voluptatum deleniti atque corrupti quos</li>
-                    <li><i class="fa fa-arrow-circle-right pr-10"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</li>
+                    <li><i class="fa fa-arrow-circle-right pr-10"></i> HT reserves the right, in its discretion, to modify or change this Agreement at any time without prior notice to You. Your continued use of the Application following the posting of any changes to the Agreement constitutes acceptance of those changes. You may incur data charges when using this Application.</li>
+                    <li><i class="fa fa-arrow-circle-right pr-10"></i>This agreement does not change or amend in any way the Usage Rules set forth in the App Store Terms and Conditions.</li>
+                    <li><i class="fa fa-arrow-circle-right pr-10"></i>By downloading or using the application, you accept these terms of use. if you do not accept them, do not download or use the application.</li>
+                    <li><i class="fa fa-arrow-circle-right pr-10"></i>If you access any internet-based services via links in the application, your use of those services will be subject to both this agreement and any separately provided terms of use and privacy statement on such web site
+You agree to comply with all local, state, and national laws, statutes, ordinances, and regulations that apply to Your use of the Application.</li>
                     <li><i class="fa fa-arrow-circle-right pr-10"></i>Mentum eleifend enim a feugiat distinctio lor</li>
                 </ul>
+<h3>15. MISCELLANEOUS.</h3>
+                <p>
+               You agree to comply with all local, state, and national laws, statutes, ordinances, and regulations that apply to Your use of the Application.
 
+                </p>
+
+                
             </div>
         </div>
 
     </div>
-    <!--container end-->
-
-    <!--footer start-->
-     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                     <h1>contact info</h1>
-                     <address>
-                         <p><i class="fa fa-home pr-10"></i>Address: No.XXXXXX street</p>
-                         <p><i class="fa fa-globe pr-10"></i>Mars city, Country</p>
-                         <p><i class="fa fa-mobile pr-10"></i>Mobile : (123) 456-7890</p>
-                         <p><i class="fa fa-phone pr-10"></i>Phone : (123) 456-7890</p>
-                         <p><i class="fa fa-envelope pr-10"></i>Email : <a href="javascript:;">support@example.com</a></p>
-                     </address>
-                 </div>
-                <div class="col-lg-3 col-sm-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                    <h1>latest tweet</h1>
-                    <div id="owl-slide">
-                    <div class="tweet-box">
-                        <i class="fa fa-twitter"></i>
-                        <em>Please follow <a href="javascript:;">@example</a> for all future updates of us! <a href="javascript:;">twitter.com/acme</a></em>
-                    </div>
-                    <div class="tweet-box">
-                        <i class="fa fa-twitter"></i>
-                        <em>Please follow <a href="javascript:;">@example</a> for all future updates of us! <a href="javascript:;">twitter.com/acme</a></em>
-                    </div>
-                    <div class="tweet-box">
-                        <i class="fa fa-twitter"></i>
-                        <em>Please follow <a href="javascript:;">@example</a> for all future updates of us! <a href="javascript:;">twitter.com/acme</a></em>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-3">
-                <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-                    <h1>Our Company</h1>
-                    <ul class="page-footer-list">
-
-                        <li><i class="fa fa-angle-right"></i><a href="about.html">About Us</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="faq.html">Support</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="service.html">Service</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="career.html">We are Hiring</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="terms.html">Term & condition</a></li>
-
-                    </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-3">
-
-                    <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
-                    <h1>Text Widget</h1>
-                        <p>
-                            This is a text widget.Lorem ipsum dolor sit amet.
-                            This is a text widget.Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </footer>
-    <!-- footer end -->
     <!--small footer start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+            <h1>
+              Contact Us
+            </h1>
+            <address>
+              <p><i class="fa fa-map-marker pr-12"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hillcroft Technologies Ltd.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hillcroft Brokerage Ltd.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T/A mTek Services<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Westwood, 3rd Floor, Off Ring Road,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Westlands, Nairobi, Kenya</p>
+              <!-- <p><i class="fa fa-globe pr-10"></i> </p> -->
+              <!-- <p><i class="fa fa-mobile pr-10"></i>&nbsp;&nbsp;0800 720 137 (call for free) </p> -->
+              <p><i class="fa fa-phone pr-10"></i>&nbsp;+254 (0) 800 720 137  (Call for free)</p>
+              <p><i class="fa fa-envelope pr-10"></i>&nbsp;<a href="besmarter@mtek-services.com">besmarter@mtek-services.com</a></p>
+              <p><i class="fa fa-globe pr-10"></i>&nbsp;<a href="mtek-services.com" target="_blank">www.mTek-Services.com</p>
+
+            </address>
+          </div>
+          
+          <div class="col-lg-9 col-sm-4">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+              <div class="col-lg-12 col-sm-4">
+              <div class="footer-heading">
+
+               <h1 style="font-size: 24px !important; color: white !important; font-weight: bold;">mTek Services...
+                <p class="footer" style="font-size: 14px;color: white; text-align: left; display: inline;">Insure you are smarter!<br>
+    Your end-to-end insurance solution.</p>
+              </h1>
+            </div>
+          </div>
+             <div class="col-lg-4 col-sm4">
+              <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="#">We are mTek</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="#">Solutions</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="">We are hiring</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col-lg-4 col-sm-4">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                 <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Account</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Basics</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Be smarter</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="terms.html"> Legal</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Trust & Safety</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
+               <ul class="page-footer-list">
+                
+                <!-- <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="terms.html"> Terms & Conditions</a>
+                </li> -->
+                <!-- <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="">We are hiring</a>
+                </li> -->
+                <!-- <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="privacy.html">Privacy Policy</a>
+                </li> -->
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
+              <h1>
+                
+              </h1>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <footer class="footer-small">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6 pull-right">
                     <ul class="social-link-footer list-unstyled">
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".1s"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".2s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".3s"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".4s"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".5s"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".6s"><a href="#"><i class="fa fa-skype"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".7s"><a href="#"><i class="fa fa-github"></i></a></li>
-                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".8s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".1s"><a href="https://www.facebook.com/mtekservicesKE/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".2s"><a href="https://www.instagram.com/mtek_services/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".5s"><a href="https://twitter.com/mTek_Services" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".8s"><a href="https://www.youtube.com/channel/UCOInzo8d1kQ-ekTMMIVRmRA" target="_blank"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                   <div class="copyright">
-                    <p>&copy; Copyright - Acme Theme by cosmic.</p>
+                    <p>&copy;Hillcroft Technologies Limited 2019</p>
                   </div>
                 </div>
             </div>
         </div>
     </footer>
-     <!--small footer end-->
+    <!--small footer end-->
 
-  <!-- js placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/hover-dropdown.js"></script>
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript" src="assets/bxslider/jquery.bxslider.js"></script>
-
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/link-hover.js"></script>
-
-
-     <!--common script for all pages-->
-    <script src="js/common-scripts.js"></script>
-
-
-    <script src="js/wow.min.js"></script>
-    <script>
-        wow = new WOW(
-          {
-            boxClass:     'wow',      // default
-            animateClass: 'animated', // default
-            offset:       0          // default
-          }
-        )
-        wow.init();
+    <!-- js placed at the end of the document so the pages load faster-->
+<!--<script src="js/jquery.js">-->
+</script>
+<script src="js/jquery-1.8.3.min.js">
     </script>
-</body>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="js/hover-dropdown.js">
+    </script>
+    <script defer src="js/jquery.flexslider.js">
+    </script>
+    <script type="text/javascript" src="assets/bxslider/jquery.bxslider.js">
+    </script>
+
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js">
+    </script>
+    <script src="js/wow.min.js">
+    </script>
+    <script src="assets/owlcarousel/owl.carousel.js">
+    </script>
+
+    <script src="js/jquery.easing.min.js">
+    </script>
+    <script src="js/link-hover.js">
+    </script>
+    <script src="js/superfish.js">
+    </script>
+    <script type="text/javascript" src="js/parallax-slider/jquery.cslider.js">
+    </script>
+    <script type="text/javascript">
+      $(function() {
+
+        $('#da-slider').cslider({
+          autoplay    : true,
+          bgincrement : 100
+        });
+
+      });
+    </script>
+<script>
+  autoPlayYouTubeModal();
+
+  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+  function autoPlayYouTubeModal() {
+      var trigger = $("body").find('[data-toggle="modal"]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-theVideo"),
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+  }
+</script>
+
+
+    <!--common script for all pages-->
+    <script src="js/common-scripts.js">
+    </script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+
+
+        $('.bxslider1').bxSlider({
+          minSlides: 5,
+          maxSlides: 6,
+          slideWidth: 360,
+          slideMargin: 2,
+          moveSlides: 1,
+          responsive: true,
+          nextSelector: '#slider-next',
+          prevSelector: '#slider-prev',
+          nextText: 'Onward →',
+          prevText: '← Go back'
+        });
+
+      });
+
+
+    </script>
+
+
+    <script>
+      $('a.info').tooltip();
+
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider) {
+            $('body').removeClass('loading');
+          }
+        });
+      });
+
+      $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+
+          items : 4
+
+        });
+
+      });
+
+      jQuery(document).ready(function(){
+        jQuery('ul.superfish').superfish();
+      });
+
+      new WOW().init();
+
+
+    </script>
+  </body>
 </html>

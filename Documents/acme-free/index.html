@@ -34,6 +34,8 @@
       <script src="js/respond.min.js"></script>
     <![endif] -->
     <style>
+
+
       .android-btn{
 
 width: 240px;
@@ -63,27 +65,6 @@ color: #fff;
 line-height: 24px;
 }
 
-      .overlay{position: absolute;
-            display: flex;
-            top: -60%;
-            bottom: 0;
-            left: -50%;
-            right: 0;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            color: white;
-            text-align: center;
-           }
-            .overlay .videoButtonWrapper{
-                flex-direction: row;
-                margin-bottom: 10px;
-            }
-            .videoBackgroundWrapper{position: relative; width: 1005;overflow: hidden;}
-            .videoBackground{width: 100%;}
-              .tooltip:hover .tooltiptext {
-                  visibility: visible;
-              }
               p.insure{
                 text-align: center;
               }
@@ -91,20 +72,52 @@ line-height: 24px;
     position: relative;
     padding-bottom: ;
     padding-top: 30px;
-    height: 500px !important;
+    height: 700px !important;
     width: 100%;
     overflow: hidden;
 }
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #167f9f;
+  background-color: black;
   opacity: 0.5;
   z-index: 1;
+}*/
+.float-right{
+  position:absolute;
 }
+h1{
+  top:100px;
+  right:990px;
+  color: white !important;
+  font-size: 1.8em;
+  text-align: left;
+}
+h2{
+    top:150px;
+  right:732px;
+  color: white !important;
+  font-size: 1.6em;
+  text-align: left;
+
+}
+a.float-right{
+    top:220px;
+  right:1032px;
+  color: white !important;
+  font-size: 1.6em;
+  text-align: left;
+  background-color: #32c1dA;
+  padding: 2%;
+  border:2px ;
+  border-radius: 30px;
+  opacity: 0.8;
+
+}
+
               </style>
   </head>
 
@@ -124,29 +137,30 @@ window.location.reload();
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
               <span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">
-              <span><a class="navbar-brand" href="index.html"><span><img class="logo" src="logo/MTEK-LOGO-1.gif" width="180" >
+              <span><a class="navbar-brand" href="index.html"><span><img class="logo" src="logo/MTEK-LOGO-1.gif" width="150" >
               </span></a></span></a>
 
           </div>
 
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                  <li>
+                  <li style="" >
                       <a href="index.html">Home</a>
                   </li>
                   <li>
-                      <a href="#">Solution</a>
+                      <a href="#">Solutions</a>
                   </li>
                   <li>
                       <a href="help.html">Help</a>
                   </li>
-                  <li>
+                  <li class="visited">
                       <a href="contact.html">Contact Us</a>
                   </li>
 
                   <li class="active">
                         <a href="https://bit.ly/30rVEGv" target="_blank">Download Now</a>
                     </li>  
+                    <li><input class="form-control search" placeholder=" Search" type="text"></li>
                     <!-- <a class="btn btn-lg btn-success big-btn android-btn" href="https://bit.ly/30rVEGv" target="_blank">
           <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a> -->
           
@@ -156,135 +170,49 @@ window.location.reload();
       </div>
     </header>
     <!--header end-->
-
-    <!-- Sequence Modern Slider -->
-    <!--<div id="da-slider" class="da-slider">
-
-            <div class="da-slide">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-              <h2>
-                <i>CLEAN &amp; FRESH</i>
-                <br>
-                <i>RESPONSIVE</i>
-                <br>
-                <i>DESIGN</i>
-              </h2>
-              <p>
-                <i>Lorem ipsum dolor amet</i>
-                <br />
-                <i>veniam omnis</i>
-              </p>
-              <a href="#" class="btn btn-info btn-lg da-link">
-                Read more
-              </a>
-              <div class="da-img">
-                <img src="img/parallax-slider/images/2.png" alt="image01" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-            <div class="da-slide">
-            <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-        <h2>
-          <i>RESPONSIVE VIDEO</i>
-            <br />
-          <i>SUPPORT AND</i>
-            <br />
-          <i>MANY MORE</i>
-        </h2>
-        <p>
-          <i>Lorem ipsum dolor amet</i>
-            <br />
-          <i>tempor incididunt ut</i>
-        </p>
-        <a href="#" class="btn btn-info btn-lg da-link">
-          Read more
-        </a>
-        <div class="da-img">
-          <img src="img/parallax-slider/images/3.png" alt="image01" />
-        </div>
-      </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="da-slide">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-        <h2>
-          <i>USING BEST WEB</i>
-            </br>
-          <i>SOLUTIONS WITH</i>
-            </br>
-          <i>HTML5/CSS3</i>
-        </h2>
-        <p>
-          <i>Lorem ipsum dolor amet</i>
-          <br />
-          <i>tempor incididunt ut</i>
-          <br />
-          <i>veniam omnis </i>
-        </p>
-        <a href="#" class="btn btn-info btn-lg da-link">
-          Read more
-        </a>
-        <div class="da-img">
-          <img src="img/parallax-slider/images/1.png" alt="image01" />
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-
-      <nav class="da-arrows">
-        <span class="da-arrows-prev">
-        </span>
-        <span class="da-arrows-next">
-        </span>
-      </nav>
-    </div>-->
-    <!-- <div class="container-fluid"></div>
-    <header>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="videos/mtek website hero video_1.mp4" type="video/mp4">
-        </video>
-        <div class="container h-100">
-          <div class="d-flex h-100 text-center align-items-center">
-            <div class="w-100 text-white">
-              <h1 class="display-3">Video Header</h1>
-              <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
-            </div>
-          </div>
-        </div>
-      </header> -->
-      <!-- <header> -->
-  <!-- <section class="banner embed-responsive-item"> -->
+ <!-- <header>
+  <section class="banner embed-responsive-item">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+         <source src="http://www.example/home.webm" type="video/webm"> -->
+       <!--  <source src="videos/mtek website hero video_1.mp4" type="video/mp4">
+    </video>
+    <h1 class="float-right">Insure you are smarter!</h1><br>
+    <h2 class="float-right">Your end-to-end insurance solution
+      - truly paperless!</h2></br>
+    <a class="float-right" a href="https://bit.ly/30rVEGv " target="_blank" >Download Now</button></a>
+  </section>
+</header>  -->
     
-  <!-- </section> -->
-<!-- </header> -->
-    <!-- -->
-    <!--property end-->
     <div class="row">
     <div class="col-lg-12 col-sm-12">
 
                 <div class="video-container">
                  
 <object class="embed-responsive-item">
-  <div class="overlay"></div>
+ 
      <video autoplay loop >
-       <source src="videos/mtek website video cut 1.mp4" />
+       <source src="videos/mtek website video cut 1.mp4" type="video/mp4">
      </video>
-   </object></div></div></div>
+     <!-- <h1 class="float-right">Insure you are smarter!</h1><br>
+    <h2 class="float-right">Your end-to-end insurance solution
+      - truly paperless!</h2></br> -->
+      <h1 class="float-right">Insure you are smarter!</h1><br>
+    <h2 class="float-right">Your end-to-end insurance solution
+      - truly paperless!</h2></br>
+    <a class="float-right" href="https://bit.ly/30rVEGv " target="_blank">Download Now</a>
+     <!--  <a class="btn btn-lg btn-success big-btn android-btn" href="#">
+          <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a> -->
+           <div class="overlay"></div> 
+</object>
+     </div>
+      <!-- <h1 class="float-right">Insure you are smarter!</h1><br>
+    <h2 class="float-right">Your end-to-end insurance solution
+      - truly paperless!</h2></br>
+ -->
+  <!--  </div>
+</object></div></div></div>
+ </div> --> 
+   
 
 <!-- 4:3 aspect ratio --> 
 <!-- 
@@ -298,37 +226,7 @@ window.location.reload();
 
 </div> -->
                 </div>
-      <!-- <div class="row"> -->
-        <!-- <div class="col-lg-12 col-sm-12 col-md-12">
-      <div class="header"> -->
-    <!-- <div class="videoBackgroundWrapper"> -->
-      <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"> -->
-        <!-- <source src="http://www.example/home.webm" type="video/webm"> -->
-         <!-- <source src="videos/mtek website hero video_1 (online-video-cutter.com).mp4" type="video/webm"> -->
-                    <!--  <video preload="auto" autoplay="true" loop="true" class="videoBackground">
-                 <source src="videos/mtek_website_hero_video_1.mp4" type="video/mp4">
-              </video> -->
-                       <!--  <div class="overlay">
-             <h2 style="font-size: 30px; border:2px solid #fff; border-radius: 30px; padding-bottom: 2px;padding-top: 10px;padding-left: 10px;padding-right: 10px;">Insure you compare!
-             <p class="insure" style="font-size: 24px;">Your end-to-end insurance solution-truly paperless!</p></h2>
-             <div class="videoButtonWrapper"> -->
-             <!-- <button class="btn btn-primary">See Templates</button> -->
-            <!--  <button class="btn btn-primary" data-toggle="modal" data-target="#videoModal" data-theVideo=https://www.youtube.com/embed/OrPg1MfFWWo ><a style="font-size: 30px; color: white; padding-top:2%;padding-bottom: 2%;padding-right: 2%;padding-left: 2%;" href="#">Watch Video</a></button>
-             <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true"> -->
-
-
-        <!-- <div class="modal-content"> -->
-           <!--  <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <div>
-                    <iframe width="560" height="315" src=""></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-             <!-- <a class="btn btn-lg btn-success big-btn android-btn" href="https://bit.ly/30rVEGv" target="_blank">
-          <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>     </div> -->
+      
 </div>
 </div>
 </div>
@@ -342,17 +240,19 @@ window.location.reload();
         <div class="row">
           <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
             <h1>
-              Contact info
+              Contact Us
             </h1>
             <address>
-              <p><i class="fa fa-home pr-10"></i>mTek Services<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Westwood, 3rd FloorOff Ring<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road, Westlands</p>
-              <p><i class="fa fa-globe pr-10"></i>&nbsp;Nairobi, Kenya </p>
+              <p><i class="fa fa-map-marker pr-12"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hillcroft Technologies Ltd.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hillcroft Brokerage Ltd.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T/A mTek Services<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Westwood, 3rd Floor, Off Ring Road,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Westlands, Nairobi, Kenya</p>
+              <!-- <p><i class="fa fa-globe pr-10"></i> </p> -->
               <!-- <p><i class="fa fa-mobile pr-10"></i>&nbsp;&nbsp;0800 720 137 (call for free) </p> -->
-              <p><i class="fa fa-phone pr-10"></i>&nbsp;0800 720 137 (call for free)</p>
+              <p><i class="fa fa-phone pr-10"></i>&nbsp;+254 (0) 800 720 137  (Call for free)</p>
               <p><i class="fa fa-envelope pr-10"></i>&nbsp;<a href="besmarter@mtek-services.com">besmarter@mtek-services.com</a></p>
-
+              <p><i class="fa fa-globe pr-10"></i>&nbsp;<a href="mtek-services.com" target="_blank">www.mTek-Services.com</p>
             </address>
           </div>
           <!-- <div class="col-lg-3 col-sm-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
@@ -385,76 +285,84 @@ window.location.reload();
                 </em>
               </div>
           </div> -->
-          <div class="col-lg-3 col-sm-3">
+          <div class="col-lg-9 col-sm-4">
             <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-               <h1>mTek Services<br>
-                <p class="footer" style="font-size: 20px;color: white; text-align: left;">Insure you are smarter!
-    Your<br> end-to-end insurance<br> solution</p>
+              <div class="col-lg-12 col-sm-4">
+              <div class="footer-heading">
+
+               <h1 style="font-size: 24px !important; color: white !important; font-weight: bold;">mTek Services...
+                <p class="footer" style="font-size: 14px;color: white; text-align: left; display: inline;">Insure you are smarter!<br>
+    Your end-to-end insurance solution.</p>
               </h1>
-             <!--  <p style="font-size: 12px; color: white;">
-                Insure you are smarter!<br>
-    Your end-to-end insurance solution</p>
-      - truly paperless! -->
-              <ul class="page-footer-list">
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="#">About Us</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Help</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Help</a>
-                </li>
-              </ul>
             </div>
           </div>
-            <div class="col-lg-3 col-sm-3">
-            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-                 <ul class="page-footer-list">
+             
+      <div class="col-lg-4 col-sm4">
+              <ul class="page-footer-list">
                 <li>
                   <i class="fa fa-angle-right"></i>
                   <a href="#">We are mTek</a>
                 </li>
                 <li>
                   <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Solution</a>
+                  <a href="#">Solutions</a>
                 </li>
                 <li>
                   <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Help</a>
+                  <a href="#">We are hiring</a>
                 </li>
                 <li>
                   <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Touch Base With Us</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Download Now</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Help</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="help.html">Help</a>
+                  <a href="contact.html">Contact Us</a>
                 </li>
               </ul>
             </div>
           </div>
+            <div class="col-lg-4 col-sm-4">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                 <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Account</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Basics</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Be smarter</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="terms.html"> Legal</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
           <div class="col-lg-3 col-sm-3">
             <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
-              <h1>
+               <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href=""> Trust & Safety</a>
+                </li>
+                <!-- <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="terms.html"> Terms & Conditions</a>
+                </li> -->
+                <!-- <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="">We are hiring</a>
+                </li> -->
+                <!-- <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="privacy.html">Privacy Policy</a>
+                </li> -->
                 
-              </h1>
-              <!-- <p style="font-size: 12px">
-                Insure you are smarter!</h1><br>
-    Your end-to-end insurance solution
-      - truly paperless!</h2></br>
-              </p> -->
+              </ul>
             </div>
           </div>
         </div>
@@ -471,7 +379,7 @@ window.location.reload();
                             <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".8s"><a href="https://www.youtube.com/channel/UCOInzo8d1kQ-ekTMMIVRmRA" target="_blank"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4 col-lg-4">
                   <div class="copyright">
                     <p>&copy;Hillcroft Technologies Limited 2019</p>
                   </div>

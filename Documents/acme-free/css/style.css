@@ -5,7 +5,7 @@ Author: cosmic
 Website:
 */
 body {
-    color: black;
+    color: #797979;
     font-family:"Arial";
     /*font-family: 'Open Sans', sans-serif;*/
     padding: 0px !important;
@@ -19,6 +19,9 @@ a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
+}
+a:visited{
+    
 }
 ::selection {
     background: #48cfad;
@@ -37,32 +40,33 @@ h6 {
     font-family:"Arial";
     /*font-family: 'Open Sans', sans-serif;*/
 }
-a { color: #444e67 }
+a { color: #797979 }
 a:hover { color: #32c1dA }
-p { line-height: 22px }
+
+p { line-height: 22.5px }
 /*header*/
 .head-section { border-bottom: 1px solid #eee;
 margin-bottom:6px; 
 margin-top: ;}
 .head-section .navbar {
-    margin-bottom: 0.1px;
-    margin-top: -1.7%;
+    margin-bottom: 0px;
+    margin-top: -1.5%;
 }
 .navbar-default { border: none }
 .navbar-brand {
     color: #bcc0cd;
-    font-size: 30px;
+    font-size: 2px;
     font-weight: 100;
     line-height: 30px;
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 0;
 }
 .navbar-brand span { color: #48cfad }
 .head-section .navbar-collapse  ul.navbar-nav {
     float: right;
-    margin-right: 0;
+    margin-right: -12px;
     z-index: 199;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .head-section .navbar-default { background-color: #fff }
 .head-section .nav li a,
@@ -70,7 +74,7 @@ margin-top: ;}
     color:black;
     font-size: 14px;
     font-weight: 300;
-    background: none;
+    background:;
 }
 ul.dropdown-menu { border: none }
 .head-section .nav li a:hover,
@@ -802,6 +806,7 @@ ul.about-flex-slides { margin-left: 0 }
     margin-top:px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .breadcrumb {
     margin-bottom: 0;
@@ -821,7 +826,7 @@ ul.about-flex-slides { margin-left: 0 }
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.contact-form { margin-bottom: 20px }
+.contact-form { margin-bottom: 20px; }
 .address h4 {
     color: #797979;
     margin-top: -3px;
@@ -832,6 +837,7 @@ section.contact-infos {
     border: 1px solid #eee;
     margin-bottom: 15px;
     padding: 10px;
+    margin-top: 35px;
 }
 /*about us*/
 .about-us img { width: 100% }
@@ -1291,11 +1297,11 @@ ul.tag li a {
     transition: all .3s ease;
 }
 .copyright {
-    color:black;
-    padding-top: 15px;
+    color:#797979;
+    padding-top: 20px;
 }
 .page-footer { padding: 0% 13% }
-.page-footer h1 { padding-left: 4% }
+.page-footer h1 { padding-left: % }
 ul.page-footer-list {
     list-style: none;
     padding: 0px 10px;
@@ -2429,11 +2435,12 @@ border-radius: 30px;
 p { text-align: center }
 .candidate ul li { padding: 3px 0 }
 .candidate h1 { margin-bottom: 20px }
-.align-left { text-align: left }
+.align-center { text-align: center; }
 .privacy-terms h3,
 p { text-align: left; 
 margin-top: 1%;
-margin-bottom: -0.5%;}
+margin-bottom: -0.5%;
+}
 .terms-list {
     padding-left: 15px;
     padding-bottom: 25px;
